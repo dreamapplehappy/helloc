@@ -1,58 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js">
 <head>
-	<meta charset="UTF-8">
-	<title>ionic</title>
-	<link rel="stylesheet" href="http://cdn.bootcss.com/ionic/1.0.0-rc.5/css/ionic.min.css">
-  <style>
-    .item-divider{
-      background-color:  #886aea;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Hello Amaze UI</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="dist/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="dist/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="dist/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="dist/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.3.0/css/amazeui.min.css">
 </head>
 <body>
-        <ion-content>
-                  <div class="card">
-                          <div class="item item-divider">
-                                活动主办方
-                          </div>
-                          <div class="item item-text-wrap">
-                                关于主办方的一些信息
-                          </div>
-                  </div>
-                  <div class="card">
-                          <div class="item item-divider">
-                                活动名字
-                          </div>
-                          <div class="item item-text-wrap">
-                                <p>活动举办时间:2015-5-30</p>
-                                <p>活动内容:说点什么好呢?......</p>
-                                <p>回复"XXX"查看更多关于本次活动的内容.</p>
-                          </div>
-                  </div>
-                  
-                  <div class="list card">
-                          <label class="item item-input">
-                            <input type="text" placeholder="用户名">
-                          </label>
-                          <label class="item item-input">
-                            <input type="text" placeholder="手机号码">
-                          </label>
-                          <button  class="button button-full button-positive">
-                             我要参加活动
-                          </button>
-                  </div>
 
-                  <div class="card">
-                          <div class="item item-divider">
-                                技术支持
-                          </div>
-                          <div class="item item-text-wrap">
-                                由爱逸组,hello world提供技术支持
-                          </div>
-                  </div>
+<div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+  <h2 class="am-titlebar-title">栏目标题</h2>
+  <nav class="am-titlebar-nav">
+    <a href="#more" class="">more &raquo;</a>
+  </nav>
+</div>
 
-        </ion-content>
-        
+<div class="am-panel am-panel-default">
+  <div class="am-panel-hd">
+    <h3 class="am-panel-title">活动举办方</h3>
+  </div>
+  <div class="am-panel-bd">
+	杭州电子科技大学&浙江工商大学
+  </div>
+</div>
+
+<div class="am-panel am-panel-default">
+  <div class="am-panel-hd">
+    <h3 class="am-panel-title">活动详情</h3>
+  </div>
+  <div class="am-panel-bd">
+        <p>活动举办时间: 2015-5-15</p>
+        <p>活动举办地点: 杭州 西湖区</p>
+        <p>活动内容: 你是一个好人......</p>
+        <p></p>
+  </div>
+</div>
+
+<footer data-am-widget="footer" class="am-footer am-footer-default" data-am-footer="{  }">
+  <div class="am-footer-switch">
+    <span class="am-footer-ysp" data-rel="mobile" data-am-modal="{target: '#am-switch-mode'}">云适配版</span>
+    <span class="am-footer-divider">|</span>
+    <a id="godesktop" data-rel="desktop" class="am-footer-desktop"
+    href="#">电脑版</a>
+  </div>
+  <div class="am-footer-miscs ">
+    <p>由
+      <a href="http://www.yunshipei.com/" title="诺亚方舟" target="_blank">爱逸族 </a>提供技术支持</p>
+    <p>CopyRight©2014 AllMobilize Inc.</p>
+    <p>京ICP备13033158</p>
+  </div>
+</footer>
+<div id="am-footer-modal" class="am-modal am-modal-no-btn am-switch-mode-m am-switch-mode-m-default">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd am-modal-footer-hd">
+      <a href="javascript:void(0)" data-dismiss="modal" class="am-close am-close-spin"
+      data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd">您正在浏览的是
+      <span class="am-switch-mode-owner">云适配</span>
+      <span class="am-switch-mode-slogan">为您当前手机订制的移动网站。</span>
+    </div>
+  </div>
+</div>
+
+<!--在这里编写你的代码-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.3.0/js/amazeui.js"></script>
+<script src="app.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<![endif]-->
 </body>
 </html>
